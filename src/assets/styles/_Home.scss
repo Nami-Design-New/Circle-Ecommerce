@@ -1,0 +1,140 @@
+// swiper slide
+.swiper_slide {
+  margin: 0 auto;
+  .mySwiper {
+    height: 100vh;
+    .swiper_img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//Home_sections
+
+.Home_sections {
+  padding: 45px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  .section_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      font-size: 22px;
+      color: #1f1f1f;
+      font-family: "Bebas Neue", serif;
+      font-weight: 600;
+      font-style: normal;
+    }
+    .Link_title {
+      color: red;
+      font-size: 15px;
+      text-decoration: none;
+      img {
+        width: 15px;
+      }
+    }
+  }
+
+  //section card
+  .Sections_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    img {
+      width: 150px;
+      object-fit: cover;
+    }
+  }
+
+  // product card
+  .Product_card {
+    position: relative;
+    border: 1px solid #eee;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    .product_img {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .Product_title {
+      font-weight: 500;
+      font-size: 20px;
+    }
+    .Product_price {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .price_after {
+        font-size: 17px;
+        font-weight: 500;
+      }
+      .price_pefore {
+        font-size: 17px;
+        font-weight: 500;
+
+        color: #777;
+        text-decoration: line-through;
+        padding: 0;
+        margin: 0;
+      }
+      .cart {
+        background-color: #df1c26;
+        padding: 10px;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+    .discount {
+      background-color: #df1c26;
+      color: #fff;
+      width: 40px;
+      height: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+    .Heart {
+      background-color: #fff;
+      padding: 10px;
+      width: 35px;
+      height: 35px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 5px;
+    }
+  }
+}
