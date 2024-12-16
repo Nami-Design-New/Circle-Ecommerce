@@ -1,0 +1,38 @@
+.AllProuducts {
+  height: 100vh;
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    .search-txt {
+      width: 100%;
+      padding: 10px 30px;
+      border: 1px solid #eee;
+      background-color: #eee;
+      border-radius: 10px;
+      &:focus {
+        border: none;
+      }
+    }
+    .search-btn {
+      position: absolute;
+      left: 28px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      background-color: transparent;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      img {
+        width: 20px;
+      }
+    }
+  }
+}

@@ -1,17 +1,36 @@
-import React from "react";
-import logo from "../../public/images/logo.svg";
+import React, { useState } from "react";
+import ReactFlagsSelect from "react-flags-select";
+import { Link } from "react-router-dom";
 
 const Login = () => {
-  return (
-    <section className="Login_section">
-      <div className="row">
-        <div className="col-6 col-lg-6">login</div>
+  const [selected, setSelected] = useState("EG");
 
-        <div className="col-6 col-lg-6">
-          <img src={logo} alt="logo" />
-        </div>
+  return (
+    <form className="Login_section">
+      <h1>اهلا بـك..!</h1>
+      <h3>سجل الدخول في موقعنا و اطلب الآن ..</h3>
+      <ReactFlagsSelect
+        countries={["EG", "GB", "FR", "DE", "IT"]}
+        selected={selected}
+        onSelect={code => setSelected(code)}
+        className="input_flag "
+      />
+      <div className="Form_group">
+        <input
+          className="form-control"
+          type="text"
+          placeholder="رقم الجوال.. "
+        />
       </div>
-    </section>
+
+      <div className="Form_group">
+        <button className="Auth_btn">دخول</button>
+      </div>
+
+      <Link to="register" className="Link_register">
+        {" "} ليس لديك حسـاب ؟
+      </Link>
+    </form>
   );
 };
 

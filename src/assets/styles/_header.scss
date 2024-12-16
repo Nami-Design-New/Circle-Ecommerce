@@ -9,8 +9,11 @@
   top: 0;
   left: 0;
   z-index: 99999;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
-  border-bottom: 2px solid #df1c26;
+  // box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+
+  box-shadow: rgba(232, 4, 4, 0.1) 0px 1px 4px;
+
+  border-bottom: 1.5px solid #b3181e;
 }
 
 .navbar-container {
@@ -34,19 +37,22 @@
 
 .nav-links {
   list-style: none;
-  display: flex;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 60px;
   li {
     .Link {
       color: #333333;
       text-decoration: none;
       font-size: 18px;
       font-weight: bold;
+      &:hover {
+        color: #b3181e;
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -99,6 +105,7 @@
     border-radius: 8px;
     position: relative;
     cursor: pointer;
+
     span {
       font-size: 12px;
       display: flex;
@@ -113,6 +120,7 @@
       top: -5px;
       right: -5px;
     }
+
     img {
       width: 20px;
     }
@@ -128,6 +136,9 @@
     align-items: center;
     justify-content: center;
     gap: 4px;
+    &:hover {
+      border: none;
+    }
     .user-info {
       p {
         padding: 0;

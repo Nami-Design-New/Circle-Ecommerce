@@ -1,7 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "../assets/styles/_footer.scss";
 import logo from "../../public/images/Logo.svg";
 import { Link } from "react-router-dom";
@@ -15,7 +12,7 @@ const Footer = () => {
     <footer>
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-3 mb-4">
             <div className="Logo">
               <Link to="/">
                 <img src={logo} alt="" />
@@ -23,8 +20,8 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="col-12 col-lg-4">
-            <ul>
+          <div className="col-12 col-lg-6 mb-4">
+            <ul className="Footer_Links">
               <li>
                 <Link to="/" className="Link">
                   الرئيسية
@@ -48,7 +45,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-3">
             <ul className="Social_media">
               <li>
                 <Link to="/" className="Link">
@@ -75,7 +72,7 @@ const Footer = () => {
 
           <hr />
 
-          <div className="col-12 col-lg-4">
+          <div className="col-12 col-lg-12">
             <div className="copyright">copyright @2025</div>
           </div>
         </div>

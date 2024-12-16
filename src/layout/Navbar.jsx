@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar ">
+    <nav className="navbar">
       <div className="navbar-container container">
         <div className="logo">
           <img src={Logo} alt="" />
@@ -29,7 +29,7 @@ const Navbar = () => {
 
         <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
           <li>
-            <Link to="/" className="Link ">
+            <Link to="/" className="Link 800">
               الرئيسيه
             </Link>
           </li>
@@ -39,7 +39,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/" className="Link">
+            <Link to="Products" className="Link">
               المنتجات
             </Link>
           </li>
@@ -60,13 +60,19 @@ const Navbar = () => {
 
             <span>1</span>
           </div>
+
           <div className="User">
+            <img src={user} alt="user" />
+            <Link to="login">تسجيل الدخول</Link>
+          </div>
+
+          {/* <div className="User">
             <img src={user} alt="user" />
             <div className="user-info">
               <p>اهلا وسهلا</p>
               <h3>عبوده الدالي </h3>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

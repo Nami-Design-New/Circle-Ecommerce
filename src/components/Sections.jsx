@@ -148,7 +148,6 @@ const Sections = () => {
           </div>
         </div>
       </div>
-      
     </section>
   );
 };
