@@ -69,56 +69,6 @@
   }
 }
 
-.Form_group {
-  width: 100%;
-  input {
-    padding: 15px 20px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    &:focus {
-      border: 1px solid red;
-    }
-  }
-  .Auth_btn {
-    width: 100%;
-    background-color: #df1c26;
-    color: #fff;
-    padding: 10px 20px;
-    border: 1px solid #df1c26;
-    border-radius: 12px;
-    font-size: 20px;
-
-    &:hover {
-      background-color: #fff;
-      color: #df1c26;
-    }
-  }
-  .select {
-    padding: 15px 20px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-    width: 100%;
-    background: white;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-    &:focus {
-      border: 1px solid red;
-    }
-    &::-ms-expand {
-      display: none;
-    }
-  }
-}
-
-.input_flag {
-  width: 100%;
-  button {
-    padding: 14px 20px;
-    border: 1px solid #eee;
-    border-radius: 10px;
-  }
-}
 .Link_register {
   color: #df1c26;
   font-size: 18px;
@@ -145,6 +95,7 @@
     color: #777777;
   }
 }
+
 .file {
   display: flex;
   align-items: center;
@@ -186,8 +137,3 @@
 }
 
 //otp section
-
-.otp_section{
-  
-}
-

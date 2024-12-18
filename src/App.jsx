@@ -1,6 +1,6 @@
 import './App.css'
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes   } from 'react-router-dom';
 import Home from './routes/Home';
 import About from './routes/About';
 import Auth from './layout/Auth';
@@ -10,18 +10,51 @@ import AuthLayout from './layout/Auth';
 import Register from './Auth/Register';
 import Otp from './Auth/Otp';
 import Products from './Pages/Products/Products';
+import Categories from './Pages/Categories/Categorys';
+import  { useState, useEffect } from 'react';
+import FullPageLoader from './components/Loader';
+import ContactUs from './routes/ContactUs';
+
 
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState(null);
+
+
+
+  
+
+  useEffect(() => {
+    setTimeout(() => {
+      setData("");
+      setLoading(false);
+    }, 3000);
+  }, []);
+
+
 
   return (
     <>
+
+
+{loading && <FullPageLoader />}
+
     <Routes>
+
+
+
         {/*Main Routes */}
       <Route path='/' element={<Main />} >
         <Route index element={<Home />} />
         <Route path="About" element={<About />} />
-        <Route path="Products" element={<Products />} />
+        <Route path="products" element={<Products />} />
+        <Route path="category" element={<Categories />} />
+        <Route path="contactus" element={<ContactUs />} />
+
+
+
+
       </Route>
 
       {/*Auth Routes */}

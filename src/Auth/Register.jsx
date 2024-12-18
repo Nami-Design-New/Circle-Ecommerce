@@ -1,4 +1,7 @@
 import React from "react";
+import Input from "../inputs/Input";
+import Button from "../inputs/Button.jsx";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   return (
@@ -17,20 +20,28 @@ const Register = () => {
 
           <div className="col-12 col-lg-6 mb-3">
             <div className="Form_group">
-              <input
+              <Input
                 type="text"
-                className="form-control"
-                placeholder="الاسم الاول.."
+                id="name"
+                name="name"
+                // value={formData.name}
+                // onChange={handleInputChange}
+                placeholder="الاسم الاول"
+                required={true}
               />
             </div>
           </div>
 
           <div className="col-12 col-lg-6 mb-3">
             <div className="Form_group">
-              <input
+              <Input
                 type="text"
-                className="form-control"
-                placeholder="الاسم الاخيـر.."
+                id="name"
+                name="name"
+                // value={formData.name}
+                // onChange={handleInputChange}
+                placeholder=" الاسم الاخير"
+                required={true}
               />
             </div>
           </div>
@@ -46,8 +57,17 @@ const Register = () => {
           </div>
 
           <div className="Form_group">
-            <button className="Auth_btn">إنشــاء الحسـاب</button>
+            <Button
+              label="إنشــاء حسـاب"
+              // onClick={handleClick}
+              className="primary"
+              // disabled={isDisabled}
+            />
           </div>
+
+          <Link to="/login" className="Link_register mt-4">
+            {" "} لديك حساب بالفعل ؟
+          </Link>
         </div>
       </form>
     </section>

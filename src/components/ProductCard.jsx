@@ -1,32 +1,34 @@
 import React from "react";
-import sec1 from "../../public/images/sec1.svg";
+import cart2 from "../../public/images/cart2.svg";
+import heart from "../../public/images/heart.svg";
 
-const ProductCard = () => {
+const ProductCard = ({ ImgUrl, title, PriceAfter, PricePefore, discount }) => {
   return (
-    <div className="row">
-      <div className="col-12 col-lg-3 mb-2">
-        <div className="Sections_card">
-          <img src={sec1} alt="" />
-          <h3>عنوان القسم</h3>
+    <div className="Product_card">
+      <img src={ImgUrl} alt="products" className="product_img" />
+      <h3 className="Product_title">
+        {title}
+      </h3>
+
+      <div className="Product_price">
+        <h4 className="price_after">
+          {PriceAfter}
+        </h4>
+        <p className="price_pefore">
+          {PricePefore}
+        </p>
+
+        <div className="cart">
+          <img src={cart2} alt="cart" />
         </div>
       </div>
-      <div className="col-12 col-lg-3 mb-2">
-        <div className="Sections_card">
-          <img src={sec1} alt="" />
-          <h3>عنوان القسم</h3>
-        </div>
+
+      <div className="discount">
+        {discount}
       </div>
-      <div className="col-12 col-lg-3 mb-2">
-        <div className="Sections_card">
-          <img src={sec1} alt="" />
-          <h3>عنوان القسم</h3>
-        </div>
-      </div>
-      <div className="col-12 col-lg-3 mb-2">
-        <div className="Sections_card">
-          <img src={sec1} alt="" />
-          <h3>عنوان القسم</h3>
-        </div>
+
+      <div className="Heart">
+        <img src={heart} alt="Fav" />
       </div>
     </div>
   );
