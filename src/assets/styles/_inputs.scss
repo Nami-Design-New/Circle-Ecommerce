@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 15px;
+  padding: 5px;
   width: 50%;
   margin: 0 auto;
   position: relative;
@@ -12,16 +12,16 @@
     padding: 10px 30px;
     border: 1px solid #eee;
     background-color: #eee;
-    border-radius: 10px;
-    &:focus {
-      border: none;
+    border-radius: 6px;
+    &:focus-visible {
+      border-color: #df1c26 !important;
     }
   }
   .search-btn {
     position: absolute;
     left: 28px;
     cursor: pointer;
-    width: 30px;
+    width: 20px;
     height: 30px;
     background-color: transparent;
     color: #fff;
@@ -29,8 +29,9 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    
     img {
-      width: 20px;
+      width: 18px;
     }
   }
 }

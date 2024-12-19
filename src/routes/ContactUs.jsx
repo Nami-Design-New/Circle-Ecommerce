@@ -16,7 +16,7 @@ const ContactUs = () => {
     <section>
       <div className="container">
         <div className="row">
-          <div className="col-7 mb-5 m-auto">
+          <div className="col-lg-8 col-sm-12 mb-5 m-auto">
             <form
               className="Login_section"
               style={{
@@ -93,7 +93,7 @@ const ContactUs = () => {
         </div>
 
         <div className="row">
-          <div className="col-1 m-auto">
+          <div className="col-12 m-auto">
             <div style={{ height: "100vh", width: "100%" }}>
               {/* <GoogleMapReact
                 bootstrapURLKeys={{ key: "" }}
