@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../assets/styles/_Home.scss";
 import { Link } from "react-router-dom";
+
 import left from "../../public/images/left.svg";
 import sec1 from "../../public/images/sec1.svg";
 import pro1 from "../../public/images/pro1.svg";
@@ -8,6 +9,12 @@ import CategoryCard from "./CategoryCard";
 import ProductCard from "./ProductCard";
 
 const Sections = () => {
+  const GetProducts = "https://fakestoreapi.com/products";
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch(GetProducts).then(res => res.json()).then(data => setProducts(data));
+  }, []);
+
   return (
     <section className="Home_sections">
       {/* Category Main Section Cards */}
@@ -52,15 +59,20 @@ const Sections = () => {
         </div>
 
         <div className="row mt-5">
-          <div className="col-12 col-lg-3">
-            <ProductCard
-              ImgUrl={pro1}
-              title="Product Card"
-              PriceAfter="112$"
-              PricePefore="22$"
-              discount="2%"
-            />
-          </div>
+          {products &&
+            products.map(product => {
+              return (
+                <div className="col-12 col-lg-3 mb-3" key={product.id}>
+                  <ProductCard
+                    ImgUrl={product.image}
+                    title={product.title}
+                    PriceAfter={product.price}
+                    PricePefore={product.price}
+                    discount={product.rating.count}
+                  />
+                </div>
+              );
+            })}
         </div>
       </div>
     </section>

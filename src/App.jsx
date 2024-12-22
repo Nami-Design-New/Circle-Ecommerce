@@ -14,6 +14,8 @@ import Categories from './Pages/Categories/Categorys';
 import  { useState, useEffect } from 'react';
 import FullPageLoader from './components/Loader';
 import ContactUs from './routes/ContactUs';
+import ProductDetails from './Pages/Products/ProductDetails';
+import Cart from './components/Cart';
 
 
 
@@ -41,9 +43,6 @@ function App() {
 {loading && <FullPageLoader />}
 
     <Routes>
-
-
-
         {/*Main Routes */}
       <Route path='/' element={<Main />} >
         <Route index element={<Home />} />
@@ -51,6 +50,11 @@ function App() {
         <Route path="products" element={<Products />} />
         <Route path="category" element={<Categories />} />
         <Route path="contactus" element={<ContactUs />} />
+        <Route path="productDetails" element={<ProductDetails />} />
+        <Route path="cart" element={<Cart />} />
+
+
+        
 
 
 

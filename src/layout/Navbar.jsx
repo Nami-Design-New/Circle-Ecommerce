@@ -26,9 +26,9 @@ const Navbar = () => {
           &#9776;
         </div>
 
-        <div className="logo">
+        <Link to="/" className="logo">
           <img src={Logo} alt="" />
-        </div>
+        </Link>
 
         <ul className={`nav-links ${isMenuOpen ? "active" : ""}`}>
           <li>
@@ -90,11 +90,12 @@ const Navbar = () => {
             <span>1</span>
           </div>
         </div>
+
         <div className="Notifications">
-          <div className="Cart">
+          <Link to="cart" className="Cart">
             <img src={cart} alt="" />
             <span>1</span>
-          </div>
+          </Link>
           <div className="Cart">
             <img src={bell} alt="" />
 

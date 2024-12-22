@@ -1,3 +1,125 @@
 .AllProuducts {
   height: 100vh;
 }
+//Products Details Page
+.Products_Deatils {
+  padding: 25px 0px;
+  .Product_details_images {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  }
+  .Details {
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    .Name {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        color: #df1c26;
+        font-size: 26px;
+        font-weight: 600;
+      }
+      img {
+        width: 25px;
+      }
+    }
+    .Descreption {
+      font-size: 20px;
+      font-weight: 400;
+      color: #777777;
+    }
+    .Price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h4 {
+        font-size: 22px;
+        img {
+          width: 23px;
+        }
+      }
+      h2 {
+        color: #df1c26;
+        font-weight: 700;
+      }
+    }
+    .AddToCart {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      h5 {
+        font-weight: 600;
+        font-size: 22px;
+      }
+    }
+  }
+}
+
+////////////////////////
+/// /////////cart
+.cart {
+  padding: 20px;
+  .Cart_Box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 15px;
+    .Image {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      h3 {
+        font-size: 24px;
+        font-weight: 600;
+      }
+      h4 {
+        font-size: 22px;
+        img {
+          width: 20px;
+        }
+      }
+      .Img_cart {
+        width: 100px;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+    .Count_Box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-weight: 600;
+        font-size: 21px;
+        span {
+          color: #df1c26;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+  .Total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+      span {
+        font-weight: 600;
+        color: #df1c26;
+      }
+    }
+  }
+}

@@ -16,6 +16,7 @@ const Search = () => {
       <a className="search-btn" href="#">
         <img src={search} alt="" />
       </a>
+      
     </form>
   );
 };

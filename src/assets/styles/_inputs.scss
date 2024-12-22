@@ -29,7 +29,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 10px;
-    
+
     img {
       width: 18px;
     }
@@ -106,4 +106,39 @@
 .btn:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+////////////////////
+////////Counter/////
+////////////////////
+.Counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  padding: 2px 3px;
+  border-radius: 10px;
+  gap: 5px;
+
+  button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: 28px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    background-color: #fff;
+    padding: 10px 60px;
+    border-radius: 10px;
+    margin: 0;
+    font-size: 25px;
+    @media (max-width: 768px) {
+      padding: 10px 30px;
+    }
+  }
 }

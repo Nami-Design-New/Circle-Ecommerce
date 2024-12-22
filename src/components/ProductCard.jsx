@@ -1,11 +1,14 @@
 import React from "react";
 import cart2 from "../../public/images/cart2.svg";
 import heart from "../../public/images/heart.svg";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ ImgUrl, title, PriceAfter, PricePefore, discount }) => {
   return (
     <div className="Product_card">
-      <img src={ImgUrl} alt="products" className="product_img" />
+      <Link to="ProductDetails">
+        <img src={ImgUrl} alt="products" className="product_img" />
+      </Link>
       <h3 className="Product_title">
         {title}
       </h3>

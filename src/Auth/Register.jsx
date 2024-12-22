@@ -47,7 +47,7 @@ const Register = () => {
           </div>
           <div className="col-12 col-lg-12 mb-3">
             <div className="Form_group">
-              <select class="select">
+              <select className="select">
                 <option value="value1">المدينه</option>
                 <option value="value1">Mango</option>
                 <option value="value2">Banana</option>
