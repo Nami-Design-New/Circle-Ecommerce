@@ -137,3 +137,46 @@
 }
 
 //otp section
+.otp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    img {
+      width: 100%;
+    }
+    .Otp_advice {
+      color: #1f1f1f;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.otp-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.otp-inputs input {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  @media (max-width: 575px) {
+    width: 45px;
+    height: 45px;
+  }
+}

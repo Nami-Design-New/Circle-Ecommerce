@@ -1,1 +1,138 @@
+//payment & Delivery
+.payment_delivery {
+  padding: 20px;
 
+  .Card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 15px;
+    @media (max-width: 575px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+    img {
+      width: 75px;
+      aspect-ratio: 1/1;
+    }
+    .Name {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h4 {
+        font-weight: 600;
+        font-size: 21px;
+      }
+      span {
+        color: #df1c26;
+        font-size: 19px;
+      }
+    }
+    h2 {
+      font-weight: 500;
+      font-size: 18px;
+      span {
+        color: #df1c26;
+        font-weight: 700;
+        font-size: 26px;
+      }
+    }
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    span {
+      color: #df1c26;
+      font-weight: 700;
+      font-size: 26px;
+    }
+  }
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  form {
+    width: 10%;
+    @media (max-width: 575px) {
+      width: 100%;
+    }
+  }
+}
+
+///invoice_card
+.Invoice {
+  padding: 20px;
+  .invoice_Tilte {
+    h1 {
+      font-weight: 700;
+      font-size: 26px;
+    }
+  }
+  .invoice_card {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 15px;
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+    img {
+      width: 50px;
+      aspect-ratio: 1/1;
+    }
+    .address {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      @media (max-width: 575px) {
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+        font-size: 15px;
+        color: #777777;
+      }
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+      }
+    }
+  }
+  .invoice_order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    background-color: #2d2b2b;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 15px;
+    h2 {
+      color: #fff;
+      font-size: 25px;
+    }
+    .address {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      .quant {
+        color: #fff;
+        font-weight: 400;
+      }
+      .price {
+        color: #df1c26;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,1 +1,140 @@
-/*# sourceMappingURL=main.css.map */
+.payment_delivery {
+  padding: 20px;
+}
+.payment_delivery .Card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  padding: 15px;
+}
+@media (max-width: 575px) {
+  .payment_delivery .Card {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.payment_delivery .Card img {
+  width: 75px;
+  aspect-ratio: 1/1;
+}
+.payment_delivery .Card .Name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.payment_delivery .Card .Name h4 {
+  font-weight: 600;
+  font-size: 21px;
+}
+.payment_delivery .Card .Name span {
+  color: #df1c26;
+  font-size: 19px;
+}
+.payment_delivery .Card h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.payment_delivery .Card h2 span {
+  color: #df1c26;
+  font-weight: 700;
+  font-size: 26px;
+}
+.payment_delivery h2 {
+  font-weight: 500;
+  font-size: 18px;
+}
+.payment_delivery h2 span {
+  color: #df1c26;
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.total form {
+  width: 10%;
+}
+@media (max-width: 575px) {
+  .total form {
+    width: 100%;
+  }
+}
+
+.Invoice {
+  padding: 20px;
+}
+.Invoice .invoice_Tilte h1 {
+  font-weight: 700;
+  font-size: 26px;
+}
+.Invoice .invoice_card {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  background-color: #eee;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  padding: 15px;
+}
+@media (max-width: 575px) {
+  .Invoice .invoice_card {
+    flex-direction: column;
+  }
+}
+.Invoice .invoice_card img {
+  width: 50px;
+  aspect-ratio: 1/1;
+}
+.Invoice .invoice_card .address {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+@media (max-width: 575px) {
+  .Invoice .invoice_card .address {
+    text-align: center;
+  }
+}
+.Invoice .invoice_card .address p {
+  margin: 0;
+  font-size: 15px;
+  color: #777777;
+}
+.Invoice .invoice_card .address h2 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.Invoice .invoice_order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  background-color: #2d2b2b;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  padding: 15px;
+}
+.Invoice .invoice_order h2 {
+  color: #fff;
+  font-size: 25px;
+}
+.Invoice .invoice_order .address {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.Invoice .invoice_order .address .quant {
+  color: #fff;
+  font-weight: 400;
+}
+.Invoice .invoice_order .address .price {
+  color: #df1c26;
+  font-weight: 700;
+}/*# sourceMappingURL=main.css.map */

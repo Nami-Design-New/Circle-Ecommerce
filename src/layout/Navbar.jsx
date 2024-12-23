@@ -79,17 +79,6 @@ const Navbar = () => {
           </DropdownButton>
         </div>
         <Search />
-        <div className="Notifications smallNot">
-          <div className="Cart">
-            <img src={cart} alt="" />
-            <span>1</span>
-          </div>
-          <div className="Cart">
-            <img src={bell} alt="" />
-
-            <span>1</span>
-          </div>
-        </div>
 
         <div className="Notifications">
           <Link to="cart" className="Cart">

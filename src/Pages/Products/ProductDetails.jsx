@@ -5,7 +5,6 @@ import heart from "../../../public/images/heart.svg";
 import pri from "../../../public/images/pri.svg";
 import Counter from "../../inputs/Counter";
 import Button from "../../inputs/Button.jsx";
-import Form from "react-bootstrap/Form";
 
 const ProductDetails = () => {
   return (
@@ -31,24 +30,6 @@ const ProductDetails = () => {
                 <h2>$252</h2>
               </div>
               <Counter />
-              <div className=" d-flex align-items-center gap-3">
-                <div className="Form_group mb-2">
-                  <select className="select ">
-                    <option value="value1">عنوان التوصيـل</option>
-                    <option value="value1">Mango</option>
-                    <option value="value2">Banana</option>
-                    <option value="value3">Cherries</option>
-                  </select>
-                </div>
-                <div className="Form_group mb-2">
-                  <select className="select">
-                    <option value="value1">طريقه الدفع؟</option>
-                    <option value="value1">Mango</option>
-                    <option value="value2">Banana</option>
-                    <option value="value3">Cherries</option>
-                  </select>
-                </div>
-              </div>
 
               <div className="AddToCart">
                 <h5>الاجمالي: 25 ج.م</h5>
