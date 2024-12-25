@@ -1,0 +1,67 @@
+.Profile_layout {
+  padding: 30px 0px;
+  .Profile_Dashpoard {
+    background-color: #eee;
+    padding: 10px 0px;
+    border-radius: 12px;
+    @media (max-width: 900px) {
+      padding: 0;
+    }
+
+    .List {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      flex-direction: column;
+      @media (max-width: 900px) {
+        flex-direction: row;
+      }
+
+      li {
+        padding: 5px 10px;
+        text-align: center;
+        border-radius: 5px;
+        width: 100%;
+        &:hover {
+          background-color: #fff;
+        }
+        img {
+          width: 60px;
+          @media (max-width: 557px) {
+            width: 40px;
+          }
+        }
+        h2 {
+          font-size: 21px;
+          margin-top: 8px;
+        }
+      }
+      .Link_profile {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        @media (max-width: 900px) {
+          flex-direction: column;
+        }
+
+        gap: 5px;
+        img {
+          width: 35px;
+          @media (max-width: 557px) {
+            width: 30px;
+          }
+        }
+        span {
+          color: #000;
+          font-size: 21px;
+          @media (max-width: 557px) {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}

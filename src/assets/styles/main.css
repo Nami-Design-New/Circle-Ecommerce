@@ -137,4 +137,28 @@
 .Invoice .invoice_order .address .price {
   color: #df1c26;
   font-weight: 700;
+}
+
+.Contact-us {
+  padding: 35px;
+}
+.Contact-us .Adresses {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: #eee;
+  border-bottom: 1px dashed #df1c26;
+}
+.Contact-us .Adresses .branch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+}
+.Contact-us .Adresses .branch img {
+  width: 25px;
+}
+.Contact-us .Adresses .branch h3 {
+  font-size: 23px;
 }/*# sourceMappingURL=main.css.map */

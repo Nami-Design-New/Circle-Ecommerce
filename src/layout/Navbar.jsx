@@ -58,13 +58,13 @@ const Navbar = () => {
           </li>
         </ul>
 
-        <div className="User">
+        <Link to="profile" className="User">
           <img src={user} alt="user" />
           <div className="user-info">
             <p>اهلا وسهلا</p>
             <h3>عبوده الدالي </h3>
           </div>
-        </div>
+        </Link>
       </div>
       <div className="smallnav">
         <div className="City_button">

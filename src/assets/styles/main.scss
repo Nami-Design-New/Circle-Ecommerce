@@ -136,3 +136,29 @@
     }
   }
 }
+
+/////
+
+.Contact-us {
+  padding: 35px;
+  .Adresses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: #eee;
+    border-bottom: 1px dashed #df1c26;
+    .branch {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px;
+      img {
+        width: 25px;
+      }
+      h3 {
+        font-size: 23px;
+      }
+    }
+  }
+}

@@ -1,9 +1,10 @@
 import React from "react";
 import swip2 from "../../public/images/swip2.webp";
+import veg from "../../public/images/veg.svg";
 
 const About = () => {
   return (
-    <section className="About_us ">
+    <section className="About_us">
       <div className="we-are-block">
         <div id="about-us-section">
           <div className="about-us-image">
@@ -29,12 +30,7 @@ const About = () => {
 
         <div id="history-section">
           <div className="history-image">
-            <img
-              src="https://digitalupgrade.com/images/building_pic.jpg"
-              width="951"
-              height="471"
-              alt="Building Pic"
-            />
+            <img src={veg} width="951" height="471" alt="Building Pic" />
           </div>
 
           <div className="history-info">

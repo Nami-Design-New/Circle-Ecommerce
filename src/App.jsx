@@ -18,6 +18,9 @@ import Cart from './components/Cart';
 import PaymentDelivery from './Pages/Products/Payment-delivery';
 import Invoice from './Pages/Products/Invoice';
 import OTPPage from './Auth/Otp';
+import Profile from './layout/Profile';
+import { Info } from './Pages/profile/Info';
+import Rate from './Pages/profile/Rate';
 
 
 
@@ -56,19 +59,10 @@ function App() {
         <Route path="cart" element={<Cart />} />
         <Route path="paymentDelivery" element={<PaymentDelivery />} />
         <Route path="invoice" element={<Invoice/>} />
-
-
-        
-
-
-        
-
-
-        
-
-
-
-
+        <Route  path='profile' element={<Profile />} >
+        <Route index element={<Info />} />
+        <Route path='rate' element={<Rate />} />
+       </Route>
       </Route>
 
       {/*Auth Routes */}
@@ -76,11 +70,13 @@ function App() {
         <Route index element={<Login />} />
         <Route path="register" element={<Register />} />
         <Route path="otp" element={<OTPPage />} />
-
-
-      </Route>   
+      </Route>  
 
       <Route path="Auth-Layout" element={<Auth />} />
+            {/* ptofile */}
+
+      
+
     </Routes>
  
     </>

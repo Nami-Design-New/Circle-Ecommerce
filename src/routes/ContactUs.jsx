@@ -1,19 +1,12 @@
 import React from "react";
 import Input from "../inputs/Input";
 import Button from "../inputs/Button.jsx";
-// import GoogleMapReact from "google-map-react";
+import MapComponent from "../components/Map.jsx";
+import address from "../../public/images/address.svg";
 
 const ContactUs = () => {
-  const defaultProps = {
-    center: {
-      lat: 10.99835602,
-      lng: 77.01502627
-    },
-    zoom: 11
-  };
-
   return (
-    <section>
+    <section className="Contact-us">
       <div className="container">
         <div className="row">
           <div className="col-lg-8 col-sm-12 mb-5 m-auto">
@@ -75,38 +68,26 @@ const ContactUs = () => {
               </div>
             </form>
           </div>
-          <div className="col-12">
-            <div style={{ height: "100vh", width: "100%" }}>
-              {/* <GoogleMapReact
-                bootstrapURLKeys={{ key: "" }}
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
-              >
-                <AnyReactComponent
-                  lat={59.955413}
-                  lng={30.337844}
-                  text="My Marker"
-                />
-              </GoogleMapReact> */}
-            </div>
-          </div>
         </div>
 
         <div className="row">
-          <div className="col-12 m-auto">
-            <div style={{ height: "100vh", width: "100%" }}>
-              {/* <GoogleMapReact
-                bootstrapURLKeys={{ key: "" }}
-                defaultCenter={defaultProps.center}
-                defaultZoom={defaultProps.zoom}
-              >
-                <AnyReactComponent
-                  lat={59.955413}
-                  lng={30.337844}
-                  text="My Marker"
-                />
-              </GoogleMapReact> */}
+          <div className="col-12">
+            <div className="Adresses">
+              <div className="branch">
+                -
+                <img src={address} alt="address" />
+                <h3>فرع شارع الجمهوريه</h3>
+              </div>
+
+              <div className="branch">
+                -
+                <img src={address} alt="address" />
+                <h3>فرع شارع النصر</h3>
+              </div>
             </div>
+          </div>
+          <div className="col-12 m-auto">
+            <MapComponent />
           </div>
         </div>
       </div>
