@@ -11,7 +11,7 @@ const Cart = () => {
     <section className="cart">
       <div className="container">
         <div className="row m-auto">
-          <div className="col-12 mb-3">
+          <div className="col-4 mb-3">
             <div className="Cart_Box">
               <div className="Image">
                 <div className="d-flex align-items-center gap-4 flex-column">
@@ -39,7 +39,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 mb-3">
+          <div className="col-4 mb-3">
             <div className="Cart_Box">
               <div className="Image">
                 <div className="d-flex align-items-center gap-4 flex-column">
@@ -68,7 +68,36 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="col-lg-8 col-12 mb-2 mt-2 m-auto">
+          <div className="col-4 mb-3">
+            <div className="Cart_Box">
+              <div className="Image">
+                <div className="d-flex align-items-center gap-4 flex-column">
+                  <div className="Img_cart">
+                    <img src={product} alt="" />
+                  </div>
+                  <div>
+                    <h3>اسم المنتج</h3>
+                    <h4>
+                      <img src={pri} alt="price" /> 250 ج.م
+                    </h4>
+                  </div>
+                </div>
+                <Link>
+                  <img src={del} alt="Delete" />
+                </Link>
+              </div>
+              <div className="Count_Box">
+                <Counter />
+                <div className="Total">
+                  <h4>
+                    الاجمالي : <span>50.0 ج. م</span>
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-lg-6 col-6 mb-2 mt-2 m-auto">
             <div className="d-flex align-items-center gap-4 ">
               <div className="Total">
                 <h4>
