@@ -1,7 +1,7 @@
 import React from "react";
 import product from "../../public/images/product.png";
 import pri from "../../public/images/pri.svg";
-import Delete from "../../public/images/Delete.svg";
+import del from "../../public/images/del.svg";
 import { Link } from "react-router-dom";
 import Counter from "../inputs/Counter";
 import Button from "../inputs/Button.jsx";
@@ -26,7 +26,7 @@ const Cart = () => {
                   </div>
                 </div>
                 <Link>
-                  <img src={Delete} alt="Delete" />
+                  <img src={del} alt="Delete" />
                 </Link>
               </div>
               <div className="Count_Box">
@@ -54,7 +54,7 @@ const Cart = () => {
                   </div>
                 </div>
                 <Link>
-                  <img src={Delete} alt="Delete" />
+                  <img src={del} alt="Delete" />
                 </Link>
               </div>
               <div className="Count_Box">

@@ -8,6 +8,23 @@
       padding: 0;
     }
 
+    .Profile_img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5px;
+      img {
+        width: 60px;
+        @media (max-width: 557px) {
+          width: 40px;
+        }
+      }
+      h2 {
+        font-size: 21px;
+        margin-top: 8px;
+      }
+    }
     .List {
       list-style: none;
       display: flex;
@@ -27,16 +44,6 @@
         &:hover {
           background-color: #fff;
         }
-        img {
-          width: 60px;
-          @media (max-width: 557px) {
-            width: 40px;
-          }
-        }
-        h2 {
-          font-size: 21px;
-          margin-top: 8px;
-        }
       }
       .Link_profile {
         text-decoration: none;
@@ -46,8 +53,7 @@
         @media (max-width: 900px) {
           flex-direction: column;
         }
-
-        gap: 5px;
+        gap: 3px;
         img {
           width: 35px;
           @media (max-width: 557px) {
@@ -62,6 +68,26 @@
           }
         }
       }
+    }
+  }
+}
+
+//requests Tabs
+.Tabs {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  .nav-link {
+    background-color: #df1c26;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 21px;
+    .active {
+      background-color: #df1c26 !important;
+      border: 1px solid #df1c26;
+      border-radius: 10px;
     }
   }
 }

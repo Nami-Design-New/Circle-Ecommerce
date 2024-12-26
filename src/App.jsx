@@ -20,7 +20,8 @@ import Invoice from './Pages/Products/Invoice';
 import OTPPage from './Auth/Otp';
 import Profile from './layout/Profile';
 import { Info } from './Pages/profile/Info';
-import Rate from './Pages/profile/Rate';
+import Requests from './Pages/profile/Requests';
+import Favorate from './Pages/profile/Favorate';
 
 
 
@@ -61,7 +62,10 @@ function App() {
         <Route path="invoice" element={<Invoice/>} />
         <Route  path='profile' element={<Profile />} >
         <Route index element={<Info />} />
-        <Route path='rate' element={<Rate />} />
+        <Route path='requests' element={<Requests />} />
+        <Route path='favorates' element={<Favorate />} />
+
+
        </Route>
       </Route>
 

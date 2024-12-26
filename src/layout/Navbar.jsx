@@ -85,9 +85,9 @@ const Navbar = () => {
             <img src={cart} alt="" />
             <span>1</span>
           </Link>
+
           <div className="Cart">
             <img src={bell} alt="" />
-
             <span>1</span>
           </div>
         </div>

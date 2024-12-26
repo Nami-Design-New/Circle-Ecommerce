@@ -9,7 +9,8 @@ import CategoryCard from "./CategoryCard";
 import ProductCard from "./ProductCard";
 
 const Sections = () => {
-  const GetProducts = "https://fakestoreapi.com/products";
+  const GetProducts =
+    "https://kreaz.romoz.co/api/user/home/products?title=كلوجز نودلز نكهه سجق 70 جرام&category_id=&sub_category_id=&limit_per_page=&price=&alphabetical=";
   const [products, setProducts] = useState([]);
   useEffect(() => {
     fetch(GetProducts).then(res => res.json()).then(data => setProducts(data));

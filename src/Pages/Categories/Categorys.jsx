@@ -10,6 +10,10 @@ const Categories = () => {
           <div className="col-12 col-lg-3 mb-2">
             <CategoryCard title="ssss" ImgUrl={sec1} />
           </div>
+
+          <div className="col-12 col-lg-3 mb-2">
+            <CategoryCard title="ssss" ImgUrl={sec1} />
+          </div>
         </div>
       </div>
     </section>
