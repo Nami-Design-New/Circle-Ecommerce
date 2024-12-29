@@ -3,10 +3,9 @@ import "../assets/styles/_Home.scss";
 import { Link } from "react-router-dom";
 
 import left from "../../public/images/left.svg";
-import sec1 from "../../public/images/sec1.svg";
-import pro1 from "../../public/images/pro1.svg";
-import CategoryCard from "./CategoryCard";
 import ProductCard from "./ProductCard";
+import SwiperComponent from "./SwiperComponent";
+import DowenloadApp from "./app";
 
 const Sections = () => {
   const GetProducts = "https://fakestoreapi.com/products";
@@ -22,11 +21,12 @@ const Sections = () => {
         style={{
           backgroundColor: "#eee",
           width: "100%",
-          boxShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px"
+          boxShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",
+          padding: "25px"
         }}
       >
         <div className="container">
-          <div className="row mb-3">
+          <div className="row ">
             <div className="col-12 col-lg-12">
               <div className="section_title">
                 <h2> الاقسام</h2>
@@ -37,14 +37,12 @@ const Sections = () => {
             </div>
           </div>
 
-          <div className="row p-5">
-            <div className="col-12 col-lg-3 mb-2">
-              <CategoryCard title="ssss" ImgUrl={sec1} />
-            </div>
+          <div className="row p-2">
+            <SwiperComponent />
           </div>
         </div>
       </div>
-
+      <DowenloadApp />
       {/* products Main Section Cards */}
       <div className="container mt-1 p-5">
         <div className="row">
