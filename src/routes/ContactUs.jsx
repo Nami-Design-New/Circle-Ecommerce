@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../inputs/Input";
 import Button from "../inputs/Button.jsx";
-import MapComponent from "../components/Map.jsx";
+// import MapComponent from "../components/Map.jsx";
 import address from "../../public/images/address.svg";
 
 const ContactUs = () => {
