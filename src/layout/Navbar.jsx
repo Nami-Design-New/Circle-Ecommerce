@@ -92,13 +92,26 @@ const Navbar = () => {
               <span>1</span>
             </Link>
 
-            <div className="Cart">
-              <img src={bell} alt="" />
-              <span>1</span>
+            <div className="Cart notification_bell">
+              <Dropdown>
+                <Dropdown.Toggle id="dropdown-basic">
+                  <img src={bell} alt="" />
+                  <span>1</span>
+                </Dropdown.Toggle>
+
+                <Dropdown.Menu>
+                  <Dropdown.Item href="#/action-1">
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </Dropdown.Item>
+                  <Dropdown.Item href="#/action-2">
+                    <p>Lorem ipsum dolor sit amet</p>
+                  </Dropdown.Item>
+                </Dropdown.Menu>
+              </Dropdown>
             </div>
           </div>
 
-          <Link to="profile" className="User">
+          <Link to="/login" className="User">
             <img src={user} alt="user" />
             <div className="user-info">
               <h3>تسجيـل الدخـول </h3>

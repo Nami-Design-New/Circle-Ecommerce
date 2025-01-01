@@ -66,7 +66,17 @@
 ////////////////////////
 /// /////////cart
 .cart {
-  padding: 20px;
+  padding: 10px;
+
+  .Cart_title {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #eee;
+    padding: 12px;
+    border-radius: 5px;
+  }
+
   .Cart_Box {
     display: flex;
     flex-direction: column;
@@ -75,6 +85,7 @@
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     border-radius: 10px;
     padding: 15px;
+
     .Image {
       display: flex;
       justify-content: space-between;

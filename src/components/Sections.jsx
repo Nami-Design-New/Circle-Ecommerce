@@ -19,14 +19,14 @@ const Sections = () => {
       {/* Category Main Section Cards */}
       <div
         style={{
-          backgroundColor: "#eee",
+          backgroundColor: "#f0f0f0",
           width: "100%",
           boxShadow: "rgba(17, 12, 46, 0.15) 0px 48px 100px 0px",
           padding: "25px"
         }}
       >
         <div className="container">
-          <div className="row ">
+          <div className="row">
             <div className="col-12 col-lg-12">
               <div className="section_title">
                 <h2> الاقسام</h2>
@@ -44,7 +44,7 @@ const Sections = () => {
       </div>
       <DowenloadApp />
       {/* products Main Section Cards */}
-      <div className="container mt-1 p-5">
+      <div className="container mt-1 p-1">
         <div className="row">
           <div className="col-12 col-lg-12">
             <div className="section_title">

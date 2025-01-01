@@ -11,7 +11,11 @@ const Cart = () => {
     <section className="cart">
       <div className="container">
         <div className="row m-auto">
-          <div className="col-4 mb-3">
+          <div className="col-12 col-lg-12 mb-3">
+            <h2 className="Cart_title">عرض السلة</h2>
+          </div>
+
+          <div className="col-12 col-lg-4 mb-3">
             <div className="Cart_Box">
               <div className="Image">
                 <div className="d-flex align-items-center gap-4 flex-column">
@@ -39,7 +43,7 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          <div className="col-4 mb-3">
+          <div className="col-12 col-lg-4 mb-3">
             <div className="Cart_Box">
               <div className="Image">
                 <div className="d-flex align-items-center gap-4 flex-column">
@@ -68,7 +72,7 @@ const Cart = () => {
             </div>
           </div>
 
-          <div className="col-4 mb-3">
+          <div className="col-12 col-lg-4 mb-3">
             <div className="Cart_Box">
               <div className="Image">
                 <div className="d-flex align-items-center gap-4 flex-column">

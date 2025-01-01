@@ -108,7 +108,6 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  margin-right: 5px;
   @media (max-width: 575px) {
   }
 
@@ -117,6 +116,7 @@
     border-radius: 8px;
     position: relative;
     cursor: pointer;
+    
 
     span {
       font-size: 12px;
@@ -213,5 +213,24 @@
   }
   img {
     width: 25px;
+  }
+}
+.notification_bell {
+  background-color: transparent;
+  .dropdown {
+    .btn {
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      &::after {
+        display: none;
+      }
+    }
+  }
+  img {
+    width: 25px;
+  }
+  .dropdown-item {
+    border-bottom: 1px solid #eee;
   }
 }

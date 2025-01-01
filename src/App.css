@@ -2,7 +2,6 @@
 
 #root {
   direction: rtl;
-  font-family: "Bebas Neue", serif;
 
 
 
@@ -16,6 +15,8 @@ html{
 body{
   padding: 0;
   margin: 0;
+  font-family: "Bebas Neue", serif;
+
 }
 
   

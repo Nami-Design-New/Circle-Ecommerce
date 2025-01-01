@@ -10,7 +10,7 @@ const DowenloadApp = () => {
     <section className="Download_app">
       <div className="container">
         <div className="row">
-          <div className="col-12 col-lg-6">
+          <div className="col-12 col-lg-6 d-flex align-items-center justify-content-center ">
             <div className="content">
               <h2>
                 {" "}اجعل التسوق عبر الإنترنت أسهل من خلال تطبيق الهاتف المحمول
