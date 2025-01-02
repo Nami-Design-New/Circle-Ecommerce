@@ -22,6 +22,7 @@ import Profile from './layout/Profile';
 import { Info } from './Pages/profile/Info';
 import Requests from './Pages/profile/Requests';
 import Favorate from './Pages/profile/Favorate';
+import SubCategories from './Pages/Categories/SubCategories';
 
 
 
@@ -56,6 +57,9 @@ function App() {
         <Route path="About" element={<About />} />
         <Route path="products" element={<Products />} />
         <Route path="category" element={<Categories />} />
+        <Route path="/subCategories" element={<SubCategories />} />
+
+        
         <Route path="contactus" element={<ContactUs />} />
         <Route path="productDetails" element={<ProductDetails />} />
         <Route path="cart" element={<Cart />} />
@@ -65,6 +69,8 @@ function App() {
         <Route index element={<Info />} />
         <Route path='requests' element={<Requests />} />
         <Route path='favorates' element={<Favorate />} />
+
+
 
 
        </Route>

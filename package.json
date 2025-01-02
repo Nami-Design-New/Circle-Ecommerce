@@ -12,6 +12,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.1",
     "@react-google-maps/api": "^2.20.5",
+    "@react-spring/web": "^9.7.5",
     "aos": "^2.3.4",
     "font-awesome": "^4.7.0",
     "i18next": "^24.1.2",

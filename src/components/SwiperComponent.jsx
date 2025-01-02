@@ -6,7 +6,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Autoplay } from "swiper/modules";
 import CategoryCard from "./CategoryCard";
-import sec1 from "../../public/images/sec1.svg";
 
 const SwiperComponent = ({ ImgUrl }) => {
   const GetProducts = "https://fakestoreapi.com/products";
